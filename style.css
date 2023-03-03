@@ -1,0 +1,203 @@
+
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        /* github page dark theme color scheme */
+        --bg-clr-darker-blue: #0d1117;
+        --bg-clr-dark-blue: #161b22;
+
+        --txt-clr-default: #c9d1d9;
+        --txt-clr-muted: #8b949e;
+        --txt-clr-subtle: #6e7681;
+
+        --color-accent-fg: #58a6ff;
+        --color-accent-emphasis: #1f6feb;
+        --color-accent-muted: rgba(56,139,253,0.4);
+        --color-accent-subtle: rgba(56,139,253,0.15);
+        
+        --color-success-fg: #3fb950;
+        --color-success-emphasis: #238636;
+        --color-success-muted: rgba(46,160,67,0.4);
+        --color-success-subtle: rgba(46,160,67,0.15);
+        
+        --color-danger-fg: #f85149;
+        --color-danger-emphasis: #da3633;
+        --color-danger-muted: rgba(248,81,73,0.4);
+        --color-danger-subtle: rgba(248,81,73,0.15);
+        /*         
+        --color-severe-fg: #db6d28;
+        --color-severe-emphasis: #bd561d;
+        --color-severe-muted: rgba(219,109,40,0.4);
+        --color-severe-subtle: rgba(219,109,40,0.15);
+
+        --color-done-fg: #a371f7;
+        --color-done-emphasis: #8957e5;
+        --color-done-muted: rgba(163,113,247,0.4);
+        --color-done-subtle: rgba(163,113,247,0.15);
+        
+        --color-sponsors-fg: #db61a2;
+        --color-sponsors-emphasis: #bf4b8a;
+        --color-sponsors-muted: rgba(219,97,162,0.4);
+        --color-sponsors-subtle: rgba(219,97,162,0.15); */
+
+    }
+    html{
+        color-scheme: dark;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+ font-family: 'Consolas', sans-serif;
+ background-color: var(--bg-clr-darker-blue);
+ color: var(--txt-clr-default);
+ padding: 2rem;
+}
+
+
+main{
+    padding: 3rem;
+    width: 100%;
+text-align: center;
+}
+
+.heading{
+    text-align: start;
+    width: 90%;
+}
+.heading span{
+    color: var(--color-success-fg);
+}
+.heading h1{
+    font-size: 1.8rem;
+}
+.heading p{
+    color: var(--txt-clr-muted);
+}
+
+
+
+.project-list{
+    /* list-style: none; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.project-list li{
+    background-color: var(--color-accent-subtle);
+    color: var(--color-accent-emphasis);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5rem;
+    padding: 0.9rem 3rem;
+    transition: 270ms;
+}
+
+.project-unavailable{
+    background-color: var(--bg-clr-dark-blue) !important;
+    color: var(--txt-clr-subtle) !important;
+    user-select: none !important;
+    cursor:not-allowed;
+}
+
+/* .project-list li:hover{
+    transition: 400ms;
+    background-color: var(--color-accent-muted);
+    border: 1px solid var(--color-accent-emphasis);
+    color: white;
+} */
+.project-list li:hover{
+    transition: 270ms;
+    text-decoration: underline;
+    background-color: var(--color-accent-emphasis);
+    color: white;
+}
+
+.project-unavailable:hover{
+    text-decoration: none !important;
+}
+.project-unavailable a:hover{
+    text-decoration: none !important;
+    cursor: not-allowed;
+}
+.darkid-about {
+    position:fixed;
+    left: 50%;
+     -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -1px;
+    width: 22rem;
+
+    padding: 1rem;
+    border-radius: 30px 30px 0 0 ;
+    border: 1px solid #3e4959e3;
+background: #161b226e;
+backdrop-filter: blur(10px);
+display: grid;
+place-items: center;
+
+
+}
+.darkid-about img{
+width: 96px;
+margin-top: -70px;
+transition: 250ms;
+}
+.darkid-about img:hover{
+    transition: 250ms;
+transform: scale(1.2);
+filter: drop-shadow(-5px 10px 30px #000);
+cursor:grabbing;
+}
+
+.darkid-about ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+}
+.darkid-about li i{
+    font-size: 1.5rem;
+    border: 1px solid #00000000;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 250ms;
+    background-color: var(--bg-clr-dark-blue);
+    border: 1px solid var(--txt-clr-subtle);
+}
+.darkid-about li i:hover{
+    transition: 250ms;
+    background-color: #3e4959e3;
+    border: 1px solid var(--txt-clr-subtle);
+}
