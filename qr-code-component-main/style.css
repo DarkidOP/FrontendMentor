@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+--clr-White: hsl(0, 0%, 100%);
+--clr-Light-gray: hsl(212, 45%, 89%);
+--clr-Grayish-blue: hsl(220, 15%, 55%);
+--clr-Dark-blue: hsl(218, 44%, 22%);
+--clr-accent-blue: hsl(216, 95%, 58%);
+
+--bold-font-weight: 700;
+--normal-font-weight: 400;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--clr-Light-gray);
+    font-family: 'Outfit', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+
+}
+
+
+/*card css start*/
+.card-section{
+    margin-top: 7rem;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.card{
+    box-shadow: 0px 5px 37px -28px hsla(217, 45%, 22%, 0.448);
+    text-align: center;
+    width: 334px;
+    padding: 0.8rem;
+    border-radius: 18px;
+    background-color: var(--clr-White);
+}
+
+.card__img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-content{
+    padding: 1.15rem 1.15rem 1.5rem;
+}
+
+.card-content h1{
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--clr-Dark-blue);
+}
+.card-content p{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: var(--normal-font-weight);
+    color: var(--clr-Grayish-blue);   
+}
+
+/*card css end*/
+
+.attribution-section{
+    width: 100%;
+    text-align: center;
+}
+.attribution{
+    max-width: 30rem;
+    text-align: center;
+    background-color: var(--clr-White);
+    padding: 1rem;
+    border-radius: 50px;
+    color: var(--clr-Dark-blue);
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.attribution ul{
+    display: flex;
+    gap:5px;
+    /* border: 2px red solid; */
+}
+.attribution a{
+    color: var(--clr-accent-blue);
+    transition: 300ms;
+}
+
+.attribution a:hover{
+
+    transition: 300ms;
+    opacity: .6;
+    /* font-size: 12px; */
+    padding: 1rem;
+}
+@media only screen and (max-width: 600px) {
+    .attribution {
+        padding: 1rem 2rem;
+    }
+    .attribution ul{
+        flex-direction: column;
+    }
+}
