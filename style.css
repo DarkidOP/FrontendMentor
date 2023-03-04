@@ -47,6 +47,7 @@
 }
 html{
     scroll-behavior: smooth;
+
 }
 *{
     margin: 0;
@@ -80,6 +81,7 @@ body{
  background-color: var(--bg-clr-darker-blue);
  color: var(--txt-clr-default);
  padding: 2rem;
+ display: grid;
 }
 
 
@@ -91,19 +93,39 @@ text-align: center;
 
 .heading{
     text-align: start;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.heading span{
+
+
+
+.heading-item-1 span{
     color: var(--color-success-fg);
 }
-.heading h1{
+.heading-item-1 h1{
     font-size: 1.8rem;
 }
-.heading p{
+.heading-item-1 p{
     color: var(--txt-clr-muted);
 }
 
+.git-repo{
+    background-color: var(--bg-clr-dark-blue);
+    border: 1px solid var(--txt-clr-subtle);
+    border: 1px solid #3e4959e3;
+    padding: 0.7rem;
+    border-radius: 7px;
+    transition:  260ms;
+}
+.git-repo:hover{
+    transition:  260ms;
+    background-color: #3e4959e3;;
+    border: 1px solid var(--txt-clr-subtle);
 
+}
 
 .project-list{
     /* list-style: none; */
@@ -112,6 +134,7 @@ text-align: center;
     padding: 2rem;
     justify-content: space-between;
     gap: 2rem;
+    margin-left: 10px;
 }
 
 .project-list li{
@@ -200,4 +223,26 @@ cursor:grabbing;
     transition: 250ms;
     background-color: #3e4959e3;
     border: 1px solid var(--txt-clr-subtle);
+}
+
+
+@media only screen and (max-width: 749px) {
+
+    .heading{
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading-item-2{
+        margin-top: 30px;
+        margin-bottom:30px;
+    }
+    .project-list{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 530px) {
+main{
+    padding: 0;
+}
 }
