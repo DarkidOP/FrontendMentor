@@ -1,4 +1,4 @@
-# This is repo for my completed frontend mentor challenges.
+# This repo is for my completed frontend mentor challenges.
 
 <!-- ## Table of contents
 - [This is repo for my completed frontend mentor challenges.](#this-is-repo-for-my-completed-frontend-mentor-challenges)
