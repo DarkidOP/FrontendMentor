@@ -133,11 +133,14 @@ text-align: center;
     flex-wrap: wrap;
     padding: 2rem;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 3rem;
     margin-left: 10px;
 }
 
 .project-list li{
+    color: var(--color-accent-emphasis);
+}
+.project-list li a{
     background-color: var(--color-accent-subtle);
     color: var(--color-accent-emphasis);
     border: 1px solid rgba(0, 0, 0, 0);
@@ -146,20 +149,22 @@ text-align: center;
     transition: 270ms;
 }
 
-.project-unavailable{
+.project-unavailable a{
     background-color: var(--bg-clr-dark-blue) !important;
     color: var(--txt-clr-subtle) !important;
     user-select: none !important;
     cursor:not-allowed;
 }
-
+.project-list li[class="project-unavailable"]{
+    color: var(--txt-clr-subtle) !important;
+}
 /* .project-list li:hover{
     transition: 400ms;
     background-color: var(--color-accent-muted);
     border: 1px solid var(--color-accent-emphasis);
     color: white;
 } */
-.project-list li:hover{
+.project-list li a:hover{
     transition: 270ms;
     text-decoration: underline;
     background-color: var(--color-accent-emphasis);
@@ -173,6 +178,9 @@ text-align: center;
     text-decoration: none !important;
     cursor: not-allowed;
 }
+/* project css end */
+
+
 .darkid-about {
     position:fixed;
     left: 50%;

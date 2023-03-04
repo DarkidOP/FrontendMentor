@@ -16,7 +16,7 @@
 
 ### Main page preview
 
-![finished project screenshot](./index-site-preview.png)
+![](./index-site-preview.png)
 
 
 ### Links
